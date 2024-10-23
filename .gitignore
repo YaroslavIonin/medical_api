@@ -10,3 +10,4 @@ server/config/migrations/*/*
 .env
 #/docker-compose.yml
 env
+medicaldb
