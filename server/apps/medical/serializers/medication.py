@@ -16,7 +16,6 @@ class CreateUpdateMedicationSerializer(serializers.ModelSerializer):
         model = Medication
         fields = [
             'name',
-            'dosage',
             'price',
             'is_discounted',
         ]
