@@ -17,12 +17,17 @@
 1. Клонируйте проект в папку:
 
 ```bash
-git clone https://github.com/YaroslavIonin/medical_api.git
+git clone https://github.com/YaroslavIonin/medical_api.git && cd medical_api
 
 ```
 
 2. Создайте виртуальное окружение:
 
+```bash
+python3 -m venv venv
+
+```
+ИЛИ 
 ```bash
 python -m venv venv
 
@@ -30,27 +35,52 @@ python -m venv venv
 
 3. Активируйте виртуальное окружение:
 
+- Linux
 ```bash
 source venv/bin/activate
 
 ```
+- Windows
+```bash
+venv/Scripts/activate
 
+```
 4. Установите все зависимости из requirements.txt:
 
 ```bash
 pip install -r requirements.txt
 
 ```
+5. Создайте миграции
+
+```bash
+python3 server/manage.py makemigrations
+
+```
+ИЛИ
+```bash
+python server/manage.py makemigrations
+
+```
 
 5. Выполните миграции:
 
 ```bash
+python3 server/manage.py migrate
+
+```
+ИЛИ
+```bash
 python server/manage.py migrate
 
 ```
-
 6. Запустите проект:
 
+```bash
+python3 server/manage.py runserver
+
+```
+ИЛИ
 ```bash
 python server/manage.py runserver
 
