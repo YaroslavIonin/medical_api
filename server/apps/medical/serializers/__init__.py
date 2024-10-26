@@ -1,2 +1,3 @@
 from .patient import PatientSerializer, CreateUpdatePatientSerializer
 from .medication import MedicationSerializer, CreateUpdateMedicationSerializer
+from .prescription import PrescriptionSerializer, CreateUpdatePrescriptionSerializer

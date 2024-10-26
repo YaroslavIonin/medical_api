@@ -3,7 +3,7 @@ from rest_framework import serializers
 from apps.medical.models import Patient
 
 
-# Сериализатор для получение списка пациентов или одного пациента
+# Сериализатор для получения списка пациентов или одного пациента
 class PatientSerializer(serializers.ModelSerializer):
     class Meta:
         model = Patient

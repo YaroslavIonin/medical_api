@@ -3,7 +3,7 @@ from rest_framework import serializers
 from apps.medical.models import Medication
 
 
-# Сериализатор для получение списка медикаментов или одного медикамента
+# Сериализатор для получения списка медикаментов или одного медикамента
 class MedicationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Medication
@@ -22,7 +22,7 @@ class CreateUpdateMedicationSerializer(serializers.ModelSerializer):
         ]
 
     # Определяем метод data как свойство,
-    # чтобы после выполнение запроса получать данные в виде PatientSerializer
+    # чтобы после выполнение запроса получать данные в виде MedicationSerializer
     @property
     def data(self):
         return MedicationSerializer(

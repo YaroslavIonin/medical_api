@@ -13,7 +13,7 @@ SITE_ID = 1
 # Debug settings (with docker)
 ##################################################################
 
-DEBUG = False
+DEBUG = True
 print(DEBUG)
 ##################################################################
 # Databases settings (with docker)

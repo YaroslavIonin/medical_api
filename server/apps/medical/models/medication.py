@@ -7,10 +7,6 @@ class Medication(models.Model):
         max_length=100,
         verbose_name='Название лекарства',
     )
-    dosage = models.CharField(
-        max_length=50,
-        verbose_name='Дозировка',
-    )
     price = models.DecimalField(
         max_digits=10,
         decimal_places=2,
@@ -20,6 +16,11 @@ class Medication(models.Model):
         default=False,
         verbose_name='Льготное лекарство',
     )
+
+    class Meta:
+        verbose_name = 'Медикамент'
+        verbose_name_plural = 'Медикаменты'
+        ordering = ['name']
 
     def __str__(self):
         return self.name
