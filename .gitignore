@@ -11,3 +11,4 @@ server/config/migrations/*/*
 #/docker-compose.yml
 env
 medicaldb
+swagger.yaml

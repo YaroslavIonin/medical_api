@@ -87,3 +87,7 @@ python server/manage.py runserver
 ```
 
 7. Swagger документация http://127.0.0.1:8000/swagger/
+8. Сгенерировать файл документации
+```bash
+python server/manage.py generate_swagger swagger.yaml
+```
